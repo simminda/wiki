@@ -1,6 +1,6 @@
 # 'Wiki' Encyclopedia
 
-Wike is a Django-based web application designed to manage 'encyclopedia' style entries. This project includes features for entry management, search functionality, and front-end entry editing.
+Wiki is a Django-based web application designed to manage 'encyclopedia' style entries. This project includes features for entry management, search functionality, and front-end entry editing.
 
 ## Table of Contents
 
@@ -87,18 +87,22 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Screenshots:
 
-
 ### Landing Page
+
 ![Landing Page](screenshots/home.png)
 
 ### View Entries
+
 ![Entry Page](screenshots/view.png)
 
 ### Create Entry
+
 ![Create Entry Page](screenshots/create.png)
 
 ### Delete Entry
+
 ![Delete action page](screenshots/delete.png)
 
 ### Search Entries
+
 ![Search Page](screenshots/search.png)
