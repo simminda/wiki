@@ -1,0 +1,45 @@
+{% extends "encyclopedia/layout.html" %}
+{% load static %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+<style>
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("{% static 'img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg' %}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.1;
+        z-index: -1;
+        /* Place the background behind content */
+    }
+</style>
+<div class="container">
+    <h1>All Pages</h1>
+
+    <ul>
+        {% for entry in entries %}
+        <li><a href="{% url 'entry' entry %}" class="entry-listing">{{ entry }}</a></li>
+
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="credits">
+    Photo by <small><a
+            href="https://unsplash.com/@impatrickt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Patrick Tomasso</a> on
+        <a href="https://unsplash.com/photos/open-book-lot-Oaqk7qqNh_c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank">Unsplash</a></small>
+</div>
+
+{% endblock %}

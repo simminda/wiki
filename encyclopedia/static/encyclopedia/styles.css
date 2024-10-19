@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background-color: white;
+    width: 99%;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+/* Side bar */
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover {
+    background: rgba(252, 251, 251, 0.5);
+    text-decoration: underline;
+    color: #d63384
+}
+
+.entry-listing {
+    padding: 2px;
+    text-decoration: none;  
+}
+
+.container {
+    padding-bottom: 50px;
+    margin-left: -12px;
+}
+
+.container ul {
+    list-style-type: none;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.container ul li {
+    flex: 1 1 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 10%;
+    height: 40px; /* Fixed height for all list items */
+    border-bottom: dashed 1px #858484; 
+    margin-left: -30px;
+    
+}
+
+.container ul li:hover {
+    background: rgba(252, 251, 251, 0.5);
+    text-decoration: underline;
+}
+
+.container ul li a {
+    color: #222222;
+}
+
+.container ul li a:hover {
+    color: #d63384;
+}
+
+.credits {
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background: rgba(252, 251, 251, 0.5);
+    padding: 10px;
+    color: black;
+}

@@ -1,0 +1,30 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block body %}
+
+<style>
+    #new-entry-fields {
+        width: 1080px;
+    }
+
+    #new-entry-fields textarea {
+        height: 580px;
+    }
+</style>
+
+<div class="container">
+    <h1>Create a New Encyclopedia Entry</h1>
+
+    <form action="{% url 'create' %}" method="post" id="new-entry-fields">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Create Entry</button>
+        <a href="{% url 'index' %}" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>
+
+{% endblock %}
